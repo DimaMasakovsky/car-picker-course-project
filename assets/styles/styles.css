@@ -1,0 +1,95 @@
+html { 
+  font-size: 10px;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.6rem;
+}
+.wrapper {
+  margin: 0 auto;
+  width: 60vw;
+  display: flex;
+  flex-direction: column;
+}
+.welcome-text {
+  font-size: 10rem;
+  margin: 1rem 0 3rem 0;
+}
+.application-form {
+  margin: 3rem 0 0 1rem;
+  display: flex;
+}
+.application-input { 
+  flex: 1;
+  margin-right: 2rem;
+  border: none;
+  height: 4rem;
+  border-bottom: 0.3rem solid rgb(226, 226, 226);
+  border-radius: none;
+  font-size: 2rem;
+  box-sizing: border-box;
+}
+.application-input:focus {
+  outline: none;
+  border-bottom: 0.3rem solid rgb(0, 0, 0);
+}
+.application-button {
+  flex: 1;
+  border: none;
+  height: 4rem;
+  font-size: 2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(226, 226, 226);
+}
+.application-button:hover { 
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+}
+.application-button:focus {
+  outline: none;
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+}
+
+.menu-wrapper {
+  margin-top: 6rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 2rem;
+  grid-row-gap: 2rem;
+  grid-template-areas: 
+  "a b b"
+  "c d e";
+}
+.menu-item { 
+  height: 14rem;
+  padding: 1rem;
+  font-size: 2.8rem;
+  border: 3px solid rgb(0, 0, 0);
+  border-radius: 1rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+.menu-item:hover {
+  background-color: royalblue;
+  color: white;
+  border: none;
+}
+.grid-a {
+  grid-area: a;
+}
+.grid-b {
+  grid-area: b;
+}
+.grid-c {
+  grid-area: c;
+}
+.grid-d {
+  grid-area: d;
+}
+.grid-e {
+  grid-area: e;
+}
