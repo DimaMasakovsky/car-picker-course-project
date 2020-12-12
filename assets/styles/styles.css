@@ -16,17 +16,14 @@ html {
 body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.6rem;
-}
-.wrapper {
-  margin: 0 auto;
-  width: 60vw;
-  display: flex;
-  flex-direction: column;
+  background-color: rgb(0, 0, 0);
+  color:rgb(255, 255, 255);
 }
 .welcome-text {
   font-size: 10rem;
   margin: 1rem 0 3rem 0;
   min-height: 18rem;
+  color: white;
 }
 .secondary-page-header {
   font-size: 10rem; 
@@ -52,14 +49,16 @@ body {
   min-width: 5rem;
   border: none;
   height: 4rem;
-  border-bottom: 0.3rem solid rgb(226, 226, 226);
+  background-color: rgba(255,255,255,0.2);
+  color: white;
+  border-bottom: 0.3rem solid rgba(226, 226, 226, 0.2);
   border-radius: none;
   font-size: 2rem;
   box-sizing: border-box;
 }
 .application-input:focus {
   outline: none;
-  border-bottom: 0.3rem solid rgb(0, 0, 0);
+  border-bottom: 0.3rem solid royalblue;
 }
 .application-button {
   border: none;
@@ -69,38 +68,37 @@ body {
   background-color: rgb(226, 226, 226);
 }
 .application-button:hover { 
-  background-color: rgb(0, 0, 0);
+  background-color: royalblue;
   color: rgb(255, 255, 255);
 }
 .application-button:focus {
   outline: none;
-  background-color: rgb(0, 0, 0);
+  background-color: royalblue;
   color: rgb(255, 255, 255);
 }
-
+.wrapper {
+  width: 60vw;
+  margin: 0 auto;
+}
 .menu-wrapper {
-  margin-top: 6rem;
   margin-bottom: 2rem;
   display: grid;
-  grid-column-gap: 2rem;
-  grid-row-gap: 2rem;
+  grid-column-gap: 0;
+  grid-row-gap: 0;
   grid-template-areas: 
-  "a b b"
-  "c d e";
+  "a b c d e";
 }
 .menu-item { 
-  height: 14rem;
-  padding: 1rem;
-  font-size: 2.8rem;
-  border: 0.3rem solid rgb(0, 0, 0);
-  border-radius: 1rem;
+  height: 4rem;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+
   display: flex;
-  justify-content: flex-start;
-  align-items: flex-end;
+  justify-content: center;
+  align-items: center;
 }
 .menu-item:hover {
   background-color: royalblue;
-  border: 0.3rem solid royalblue;
   color: white;
 }
 .grid-a {
@@ -127,7 +125,8 @@ body {
   background-color: #000000;
 }
 .pros-item {
-  background-color: #ffffff;
+  background-color: rgb(0, 0, 0);
+  color:rgb(255, 255, 255);
   padding: 0.5rem 2rem;
   display: grid;
   grid-template-rows: 1.5fr 1fr 1fr;
@@ -149,7 +148,13 @@ body {
   align-self: center;
 }
 
-
+.background-wrapper { 
+  min-height: 60rem;
+  background-image: url("../images/background-cars03.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 
 .about-us-contact-list { 
   display: grid;
