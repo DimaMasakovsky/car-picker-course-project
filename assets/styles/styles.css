@@ -59,7 +59,7 @@ body {
 }
 .application-input:focus {
   outline: none;
-  border-bottom: 0.3rem solid royalblue;
+  border-bottom: 0.3rem solid  rgb(218, 165, 32);
 }
 .application-button {
   border: none;
@@ -69,12 +69,12 @@ body {
   background-color: rgb(226, 226, 226);
 }
 .application-button:hover { 
-  background-color: royalblue;
+  background-color:  rgb(218, 165, 32);
   color: rgb(255, 255, 255);
 }
 .application-button:focus {
   outline: none;
-  background-color: royalblue;
+  background-color:  rgb(218, 165, 32);
   color: rgb(255, 255, 255);
 }
 .wrapper {
@@ -99,7 +99,7 @@ body {
   align-items: center;
 }
 .menu-item:hover {
-  background-color: royalblue;
+  background-color:  rgb(218, 165, 32);
   color: white;
 }
 .grid-a {
@@ -188,7 +188,7 @@ body {
   justify-content: space-between;
 }
 .fee-item-header {
-  background-color: royalblue;
+  background-color: rgb(218, 165, 32);
   color:rgb(255, 255, 255);
   font-size: 2.4rem;
   text-align: center;
@@ -204,12 +204,15 @@ body {
   padding: 0.5rem;
 }
 .fee-item-price { 
-  background-color: royalblue;
+  background-color: rgb(218, 165, 32);
   font-size: 2.4rem;
   text-align: center;
   padding: 1rem;
   color:rgb(255, 255, 255);
   border-radius: 0 0 0.3rem 0.3rem;
+}
+.fee-item-price:hover {
+  background-color: rgb(184, 134, 11);
 }
 .fee-paragraph-box {
   padding: 0 0.5rem 0.8rem 2rem;
@@ -305,7 +308,7 @@ body {
   border-radius: 0.3rem;
 }
 .ch-i-header {
-  background-color: royalblue;
+  background-color:  rgb(218, 165, 32);
   border-radius: 0.3rem 0.3rem 0 0;
   color:rgb(255, 255, 255);
   text-align: center;
