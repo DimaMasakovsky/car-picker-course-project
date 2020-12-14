@@ -294,6 +294,80 @@ body {
   margin-top: 2rem;
 }
 
+
+.checklist-wrapper {
+  width: 90vw;
+  margin: 2rem auto;
+}
+.checklist-item {
+  background-color:rgb(255, 255, 255) ;
+  color:rgb(0, 0, 0);
+  border-radius: 0.3rem;
+}
+.ch-i-header {
+  background-color: royalblue;
+  border-radius: 0.3rem 0.3rem 0 0;
+  color:rgb(255, 255, 255);
+  text-align: center;
+  font-size: 2.4rem;
+  padding: 0.5rem;
+}
+.ch-i-item {
+  font-size: 1.8rem;
+  padding: 0.3rem 1rem;
+  list-style-type: decimal;
+  list-style-position: inside;
+}
+.car-background {
+  min-height: 2rem;
+  background: url("../images/panamera.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+
+
+.checklist-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 2fr) 1fr;
+  grid-template-areas: 
+  "a b b c"
+  "d b b e"
+  "f g h k";
+  grid-column-gap: 2rem;
+  grid-row-gap: 2rem;
+}
+.checklist-grid-a {
+  grid-area: a;
+}
+.checklist-grid-b {
+  grid-area: b;
+}
+.checklist-grid-c {
+  grid-area: c;
+}
+.checklist-grid-d {
+  grid-area: d;
+}
+.checklist-grid-e {
+  grid-area: e;
+}
+.checklist-grid-f {
+  grid-area: f;
+}
+.checklist-grid-g {
+  grid-area: g;
+}
+.checklist-grid-h {
+  grid-area: h;
+}
+.checklist-grid-k {
+  grid-area: k;
+}
+
+
 @media screen and (max-width: 900px) {
   .wrapper { 
     width: 95vw;
