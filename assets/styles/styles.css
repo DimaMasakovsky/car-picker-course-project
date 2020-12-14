@@ -310,13 +310,16 @@ body {
   color:rgb(255, 255, 255);
   text-align: center;
   font-size: 2.4rem;
-  padding: 0.5rem;
+  padding: 0.8rem;
 }
 .ch-i-item {
   font-size: 1.8rem;
   padding: 0.3rem 1rem;
   list-style-type: decimal;
   list-style-position: inside;
+}
+.ch-i-item:first-child {
+  margin-top: 0.5rem;
 }
 .car-background {
   min-height: 2rem;
