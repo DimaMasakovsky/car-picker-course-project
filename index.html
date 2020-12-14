@@ -6,48 +6,199 @@
   <title>Car picker</title>
   <link rel="stylesheet" href="assets/styles/style-reset.css">
   <link rel="stylesheet" href="assets/styles/styles.css">
+  <script src="https://kit.fontawesome.com/e8f3a86bc1.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <nav>
-    <ul class="menu-wrapper">
-      <li class="grid-a">
-        <a href="./index.html">
-          <div class="menu-item">Главная</div>
-        </a>
-      </li>
-      <li class="grid-b">
-        <a href="./pages/advantages.html">
-          <div class="menu-item">Почему мы</div>
-        </a>
-      </li>
-      <li class="grid-c">
-        <a href="./pages/about-us.html">
-          <div class="menu-item">О нас</div>
-        </a>
-      </li>
-      <li class="grid-d">
-        <a href="./pages/fee.html">
-          <div class="menu-item">Тарифы</div>
-        </a>
-      </li>
-      <li class="grid-e">
-        <a href="">
-          <div class="menu-item">Что проверяем</div>
-        </a>
-      </li>
-    </ul>
-  </nav> 
-  <div class="background-wrapper">   
+  <header>
+    <nav>
+      <ul class="menu-wrapper">
+        <li class="grid-a">
+          <a href="./index.html">
+            <div class="menu-item">Главная</div>
+          </a>
+        </li>
+        <li class="grid-b">
+          <a href="./pages/advantages.html">
+            <div class="menu-item">Почему мы</div>
+          </a>
+        </li>
+        <li class="grid-c">
+          <a href="./pages/about-us.html">
+            <div class="menu-item">О нас</div>
+          </a>
+        </li>
+        <li class="grid-d">
+          <a href="#fee-list">
+            <div class="menu-item">Тарифы</div>
+          </a>
+        </li>
+        <li class="grid-e">
+          <a href="">
+            <div class="menu-item">Что проверяем</div>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>   
+  <section class="background-wrapper">   
     <div class="wrapper">
       <h1 class="welcome-text">Помогаем подобрать авто.</h1>
       <form class="application-form">
         <input class="application-input" type="text" placeholder="ФИО"> 
         <input class="application-input" type="number" placeholder="Номер телефона"> 
         <button class="application-button">Оставить заявку</button>
-      </form>  
-    </div>   
-      
-    </div>
-  </div>
+      </form>
+    </div>    
+  </section>
+  <section class="wrapper sale-process">
+    <h3 class="section-header">Процесс продажи</h3>
+    <ul class="sale-process-list">
+      <li class="sale-process-item">
+        <h3 class="sp-item-header">1. День обращения</h3>
+        <p class="sp-item-paragraph">Консультирование, подписание договора о сотрудничестве, начало работы</p>
+        <p class="sp-item-period">Первый день</p>
+      </li>
+      <li class="sale-process-item">
+        <h3 class="sp-item-header">2. Подбор автомобиля</h3>
+        <p class="sp-item-paragraph">Поиск автомобиля по критериям, подбор лучших вариантов, ежедневный отчет</p>
+        <p class="sp-item-period">От 2 до 8 дней</p>
+      </li>
+      <li class="sale-process-item">
+        <h3 class="sp-item-header">3. Покупка автомобиля</h3>
+        <p class="sp-item-paragraph">Выезд на место, осмотр автомобиля, помощь в оформлении договора купли-продажи</p>
+        <p class="sp-item-period">Завершающий этап</p>
+      </li>
+    </ul>
+  </section>
+  <section class="fee-table-wrapper" id="fee-list">
+    <h3 class="section-header">Тарифы</h3>
+    <ul class="fee-grid">
+      <li class="fee-item">
+        <h4 class="fee-item-header">Разовый</h4>
+        <ul class="fee-item-paragraph">
+          <li class="fee-paragraph-box">Выезд специалиста</li>
+          <li class="fee-paragraph-box">Осмотр кузова, салона, электрики и узлов</li>
+          <li class="fee-paragraph-box">Компьютерная диагностика</li>
+          <li class="fee-paragraph-box">Диагностика на СТО</li>
+          <li class="fee-paragraph-box">Тест драйв</li>
+          <li class="fee-paragraph-box">Отчет по осмотру автомобиля</li>
+          <li class="fee-paragraph-box">Рекомендации эксперта</li>
+        </ul>
+        <div class="fee-item-price">
+          35$
+        </div>
+      </li>
+      <li class="fee-item">
+        <h4 class="fee-item-header">На день</h4>
+        <ul class="fee-item-paragraph">
+          <li class="fee-paragraph-box">Выезд специалиста</li>
+          <li class="fee-paragraph-box">Выезд на Вашем авто</li>
+          <li class="fee-paragraph-box">Неограниченное количество осмотров авто в течение 8 часов</li>
+          <li class="fee-paragraph-box">Осмотр кузова, салона, электрики и узлов</li>
+          <li class="fee-paragraph-box">Компьютерная диагностика</li>
+          <li class="fee-paragraph-box">Диагностика на СТО</li>
+          <li class="fee-paragraph-box">Тест драйв</li>
+          <li class="fee-paragraph-box">Отчет по осмотру автомобиля</li>
+          <li class="fee-paragraph-box">Рекомендации эксперта</li>
+        </ul>
+        <div class="fee-item-price">
+          200$
+        </div>
+      </li>
+      <li class="fee-item">
+        <h4 class="fee-item-header">Под ключ</h4>
+        <ul class="fee-item-paragraph">
+          <li class="fee-paragraph-box">Консультирование</li>
+          <li class="fee-paragraph-box">Поиск авто</li>
+          <li class="fee-paragraph-box">Выезд специалиста</li>
+          <li class="fee-paragraph-box">Осмотр кузова, салона, электрики и узлов</li>
+          <li class="fee-paragraph-box">Компьютерная диагностика</li>
+          <li class="fee-paragraph-box">Диагностика на СТО</li>
+          <li class="fee-paragraph-box">Тест драйв</li>
+          <li class="fee-paragraph-box">Отчет по осмотру автомобиля</li>
+          <li class="fee-paragraph-box">Рекомендации эксперта</li>
+          <li class="fee-paragraph-box">Переговоры с продавцом и торг</li>
+          <li class="fee-paragraph-box">Помощь в оформлении автомобиля</li>
+        </ul>
+        <div class="fee-item-price">
+          300$
+        </div>
+      </li>
+      <li class="fee-item">
+        <h4 class="fee-item-header">Авто из Европы</h4>
+        <ul class="fee-item-paragraph">
+          <li class="fee-paragraph-box">Авто под заказ с крупнейших аукционов Европы</li>
+          <li class="fee-paragraph-box">С полной сервисной историей</li>
+          <li class="fee-paragraph-box">С оценкой независимых сертифицированных инспекторов ЕС </li>
+        </ul>
+        <div class="fee-item-price">
+          600$
+        </div>
+      </li>
+    </ul>
+  </section>
+  <footer class="footer">
+    <nav class="footer-navigation">
+      <ul class="fn-list">
+        <li class="fn-item">
+          <a href="./index.html">
+            <div class="footer-nav-link-item">Главная</div>
+          </a>
+        </li>
+        <li class="fn-item">
+          <a href="./pages/advantages.html">
+            <div class="footer-nav-link-item">Почему мы</div>
+          </a>
+        </li>
+        <li class="fn-item">
+          <a href="./pages/about-us.html">
+            <div class="footer-nav-link-item">О нас</div>
+          </a>
+        </li>
+        <li class="fn-item">
+          <a href="#fee-list">
+            <div class="footer-nav-link-item">Тарифы</div>
+          </a>
+        </li>
+        <li class="fn-item">
+          <a href="">
+            <div class="footer-nav-link-item">Что проверяем</div>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <section class="footer-contacts">
+      <ul class="footer-contact-list">
+        <li class="footer-contact-item">
+          <a href="tel:+375291349991">
+            <div class="link-wrapper">
+              <i class="fas fa-phone"></i><p class="footer-contact-item-text">+37529-134-999-1</p>
+            </div>
+          </a>
+        </li>
+        <li class="footer-contact-item">
+          <a href="https://www.instagram.com/rmsothebys/">
+            <div class="link-wrapper">
+              <i class="fab fa-instagram"></i><p class="footer-contact-item-text">Мы в Instagram</p>
+            </div>
+          </a>
+        </li>
+        <li class="footer-contact-item">
+          <a href="https://vk.com/86reasonswhy">
+            <div class="link-wrapper">
+              <i class="fab fa-vk"></i><p class="footer-contact-item-text">Мы в VK</p>
+            </div>
+          </a>
+        </li>
+        <li class="footer-contact-item">
+          <a href="mailto:">
+            <div class="link-wrapper">
+              <i class="fas fa-at"></i><p class="footer-contact-item-text">Написать на почту</p>
+            </div>          
+          </a>
+        </li>
+      </ul>
+    </section>
+  </footer>
 </body>
 </html>
